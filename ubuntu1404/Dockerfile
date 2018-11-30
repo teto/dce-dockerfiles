@@ -5,7 +5,7 @@ RUN apt-get update
 RUN apt-get install -y mercurial libexpat1-dev git-core build-essential bison \
     flex libssl-dev libdb-dev libpcap-dev libc6-dbg libsysfs-dev gawk indent \
     pkg-config autoconf automake sudo ccache software-properties-common \
-    libsaxonb-java openjdk-7-jre-headless && \
+    libsaxonb-java openjdk-7-jre-headless bc && \
     rm -rf /var/lib/apt/lists/*
 
 # install g++-4.9
