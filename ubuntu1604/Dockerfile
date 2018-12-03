@@ -7,7 +7,7 @@ RUN apt-get update
 RUN apt-get install -y mercurial libexpat1-dev git-core build-essential bison \
     flex libssl-dev libdb-dev libpcap-dev libc6-dbg libsysfs-dev gawk indent \
     pkg-config autoconf automake sudo ccache libsaxonb-java openjdk-8-jre-headless \
-	python3 python3-dev python3-setuptools bc libgoocanvas-2.0-dev && \
+	python3 python3-dev python3-setuptools bc libgoocanvas-2.0-dev wget && \
     rm -rf /var/lib/apt/lists/*
 
 RUN useradd -ms /bin/bash ns3dce && adduser ns3dce sudo && echo -n 'ns3dce:ns3dce' | chpasswd
